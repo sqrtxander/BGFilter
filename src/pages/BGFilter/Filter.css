@@ -1,0 +1,81 @@
+.controls {
+    font-size: 11pt;
+}
+
+.radius {
+    border-radius: 4px;
+}
+
+.header {
+    font-size: 14pt;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.whalf {
+    width: 50%;
+}
+
+.lmar {
+    margin-left: 1em;
+}
+
+.rmar {
+    margin-right: 1em;
+}
+
+.bmar {
+    margin-bottom: 1em;
+}
+
+.tmar {
+    margin-top: 1em;
+}
+
+.size-2xl .mystack,
+.size-xl .mystack,
+.size-l .mystack,
+.size-m .mystack {
+    display: flex;
+    flex-direction: row;
+}
+
+.size-xs .mystack,
+.size-s .mystack {
+    display: flex;
+    flex-direction: column;
+}
+
+.size-2xl .myrbmar,
+.size-xl .myrbmar,
+.size-l .myrbmar,
+.size-m .myrbmar {
+    margin-right: 1em;
+    width: 50%
+}
+
+.size-xs .myrbmar,
+.size-s .myrbmar {
+    margin-bottom: 1em;
+    width: 100%
+}
+
+.size-2xl .mylbmar,
+.size-xl .mylbmar,
+.size-l .mylbmar,
+.size-m .mylbmar {
+    margin-left: 1em;
+    width: 50%
+}
+
+.size-xs .mylbmar,
+.size-s .mylbmar {
+    margin-bottom: 1em;
+    width: 100%
+}
+
+.mybutton {
+    border-radius: 4px;
+    padding: 0.5em 1em;
+}

@@ -1,0 +1,66 @@
+.app {
+	background: var(--bg);
+	color: var(--fg);
+	max-width: 100vw;
+	display: flex;
+    min-height: calc(100vh - 2em);
+	height: fit-content;
+    padding-bottom: 2em;
+	transition:
+        background 0.3s,
+        color 0.3s;
+	justify-content: top;
+	align-items: center;
+	flex-direction: column;
+}
+
+.vstack {
+	display: flex;
+	flex-direction: column;
+}
+
+.hstack {
+	display: flex;
+	flex-direction: row;
+}
+
+.wide {
+    width: 80%;
+}
+
+.fullwide {
+    width: 100%;
+}
+
+.hcenter {
+    display: flex;
+    align-items: center;
+}
+
+.ghostbutton {
+	border: 2px solid var(--fg);
+	border-radius: 10px;
+	color: var(--fg);
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	background: none;
+	transition: background 0.3s;
+    font-size: inherit;
+}
+
+.ghostbutton:hover {
+	background: color-mix(in srgb, var(--fg) 20%, transparent);
+    cursor: pointer;
+}
+
+.ghostbutton:active {
+	background: color-mix(in srgb, var(--fg) 40%, transparent);
+}
+
+.ghostbutton:disabled {
+	background: none;
+    cursor: default;
+}
+

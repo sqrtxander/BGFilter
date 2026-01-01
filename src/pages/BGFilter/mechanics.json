@@ -1,0 +1,770 @@
+[
+    {
+        "value": "Acting",
+        "label": "Acting"
+    },
+    {
+        "value": "Action / Event",
+        "label": "Action / Event"
+    },
+    {
+        "value": "Action Drafting",
+        "label": "Action Drafting"
+    },
+    {
+        "value": "Action Points",
+        "label": "Action Points"
+    },
+    {
+        "value": "Action Queue",
+        "label": "Action Queue"
+    },
+    {
+        "value": "Action Retrieval",
+        "label": "Action Retrieval"
+    },
+    {
+        "value": "Action Timer",
+        "label": "Action Timer"
+    },
+    {
+        "value": "Advantage Token",
+        "label": "Advantage Token"
+    },
+    {
+        "value": "Alliances",
+        "label": "Alliances"
+    },
+    {
+        "value": "Area Majority / Influence",
+        "label": "Area Majority / Influence"
+    },
+    {
+        "value": "Area Movement",
+        "label": "Area Movement"
+    },
+    {
+        "value": "Area-Impulse",
+        "label": "Area-Impulse"
+    },
+    {
+        "value": "Auction / Bidding",
+        "label": "Auction / Bidding"
+    },
+    {
+        "value": "Auction Compensation",
+        "label": "Auction Compensation"
+    },
+    {
+        "value": "Auction: Dexterity",
+        "label": "Auction: Dexterity"
+    },
+    {
+        "value": "Auction: Dutch",
+        "label": "Auction: Dutch"
+    },
+    {
+        "value": "Auction: Dutch Priority",
+        "label": "Auction: Dutch Priority"
+    },
+    {
+        "value": "Auction: English",
+        "label": "Auction: English"
+    },
+    {
+        "value": "Auction: Fixed Placement",
+        "label": "Auction: Fixed Placement"
+    },
+    {
+        "value": "Auction: Multiple Lot",
+        "label": "Auction: Multiple Lot"
+    },
+    {
+        "value": "Auction: Once Around",
+        "label": "Auction: Once Around"
+    },
+    {
+        "value": "Auction: Sealed Bid",
+        "label": "Auction: Sealed Bid"
+    },
+    {
+        "value": "Auction: Turn Order Until Pass",
+        "label": "Auction: Turn Order Until Pass"
+    },
+    {
+        "value": "Automatic Resource Growth",
+        "label": "Automatic Resource Growth"
+    },
+    {
+        "value": "Betting and Bluffing",
+        "label": "Betting and Bluffing"
+    },
+    {
+        "value": "Bias",
+        "label": "Bias"
+    },
+    {
+        "value": "Bids As Wagers",
+        "label": "Bids As Wagers"
+    },
+    {
+        "value": "Bingo",
+        "label": "Bingo"
+    },
+    {
+        "value": "Bribery",
+        "label": "Bribery"
+    },
+    {
+        "value": "Campaign / Battle Card Driven",
+        "label": "Campaign / Battle Card Driven"
+    },
+    {
+        "value": "Card Play Conflict Resolution",
+        "label": "Card Play Conflict Resolution"
+    },
+    {
+        "value": "Catch the Leader",
+        "label": "Catch the Leader"
+    },
+    {
+        "value": "Chaining",
+        "label": "Chaining"
+    },
+    {
+        "value": "Chit-Pull System",
+        "label": "Chit-Pull System"
+    },
+    {
+        "value": "Closed Drafting",
+        "label": "Closed Drafting"
+    },
+    {
+        "value": "Closed Economy Auction",
+        "label": "Closed Economy Auction"
+    },
+    {
+        "value": "Command Cards",
+        "label": "Command Cards"
+    },
+    {
+        "value": "Commodity Speculation",
+        "label": "Commodity Speculation"
+    },
+    {
+        "value": "Communication Limits",
+        "label": "Communication Limits"
+    },
+    {
+        "value": "Connections",
+        "label": "Connections"
+    },
+    {
+        "value": "Constrained Bidding",
+        "label": "Constrained Bidding"
+    },
+    {
+        "value": "Contracts",
+        "label": "Contracts"
+    },
+    {
+        "value": "Cooperative Game",
+        "label": "Cooperative Game"
+    },
+    {
+        "value": "Crayon Rail System",
+        "label": "Crayon Rail System"
+    },
+    {
+        "value": "Critical Hits and Failures",
+        "label": "Critical Hits and Failures"
+    },
+    {
+        "value": "Cube Tower",
+        "label": "Cube Tower"
+    },
+    {
+        "value": "Deck Construction",
+        "label": "Deck Construction"
+    },
+    {
+        "value": "Deck, Bag, and Pool Building",
+        "label": "Deck, Bag, and Pool Building"
+    },
+    {
+        "value": "Deduction",
+        "label": "Deduction"
+    },
+    {
+        "value": "Delayed Purchase",
+        "label": "Delayed Purchase"
+    },
+    {
+        "value": "Dice Rolling",
+        "label": "Dice Rolling"
+    },
+    {
+        "value": "Die Icon Resolution",
+        "label": "Die Icon Resolution"
+    },
+    {
+        "value": "Different Dice Movement",
+        "label": "Different Dice Movement"
+    },
+    {
+        "value": "Drawing",
+        "label": "Drawing"
+    },
+    {
+        "value": "Elapsed Real Time Ending",
+        "label": "Elapsed Real Time Ending"
+    },
+    {
+        "value": "Enclosure",
+        "label": "Enclosure"
+    },
+    {
+        "value": "End Game Bonuses",
+        "label": "End Game Bonuses"
+    },
+    {
+        "value": "Events",
+        "label": "Events"
+    },
+    {
+        "value": "Finale Ending",
+        "label": "Finale Ending"
+    },
+    {
+        "value": "Flicking",
+        "label": "Flicking"
+    },
+    {
+        "value": "Follow",
+        "label": "Follow"
+    },
+    {
+        "value": "Force Commitment",
+        "label": "Force Commitment"
+    },
+    {
+        "value": "Grid Coverage",
+        "label": "Grid Coverage"
+    },
+    {
+        "value": "Grid Movement",
+        "label": "Grid Movement"
+    },
+    {
+        "value": "Hand Management",
+        "label": "Hand Management"
+    },
+    {
+        "value": "Hexagon Grid",
+        "label": "Hexagon Grid"
+    },
+    {
+        "value": "Hidden Movement",
+        "label": "Hidden Movement"
+    },
+    {
+        "value": "Hidden Roles",
+        "label": "Hidden Roles"
+    },
+    {
+        "value": "Hidden Victory Points",
+        "label": "Hidden Victory Points"
+    },
+    {
+        "value": "Highest-Lowest Scoring",
+        "label": "Highest-Lowest Scoring"
+    },
+    {
+        "value": "Hot Potato",
+        "label": "Hot Potato"
+    },
+    {
+        "value": "I Cut, You Choose",
+        "label": "I Cut, You Choose"
+    },
+    {
+        "value": "Impulse Movement",
+        "label": "Impulse Movement"
+    },
+    {
+        "value": "Income",
+        "label": "Income"
+    },
+    {
+        "value": "Increase Value of Unchosen Resources",
+        "label": "Increase Value of Unchosen Resources"
+    },
+    {
+        "value": "Induction",
+        "label": "Induction"
+    },
+    {
+        "value": "Interrupts",
+        "label": "Interrupts"
+    },
+    {
+        "value": "Investment",
+        "label": "Investment"
+    },
+    {
+        "value": "Kill Steal",
+        "label": "Kill Steal"
+    },
+    {
+        "value": "King of the Hill",
+        "label": "King of the Hill"
+    },
+    {
+        "value": "Ladder Climbing",
+        "label": "Ladder Climbing"
+    },
+    {
+        "value": "Layering",
+        "label": "Layering"
+    },
+    {
+        "value": "Legacy Game",
+        "label": "Legacy Game"
+    },
+    {
+        "value": "Line Drawing",
+        "label": "Line Drawing"
+    },
+    {
+        "value": "Line of Sight",
+        "label": "Line of Sight"
+    },
+    {
+        "value": "Loans",
+        "label": "Loans"
+    },
+    {
+        "value": "Lose a Turn",
+        "label": "Lose a Turn"
+    },
+    {
+        "value": "Mancala",
+        "label": "Mancala"
+    },
+    {
+        "value": "Map Addition",
+        "label": "Map Addition"
+    },
+    {
+        "value": "Map Deformation",
+        "label": "Map Deformation"
+    },
+    {
+        "value": "Map Reduction",
+        "label": "Map Reduction"
+    },
+    {
+        "value": "Market",
+        "label": "Market"
+    },
+    {
+        "value": "Matching",
+        "label": "Matching"
+    },
+    {
+        "value": "Measurement Movement",
+        "label": "Measurement Movement"
+    },
+    {
+        "value": "Melding and Splaying",
+        "label": "Melding and Splaying"
+    },
+    {
+        "value": "Memory",
+        "label": "Memory"
+    },
+    {
+        "value": "Minimap Resolution",
+        "label": "Minimap Resolution"
+    },
+    {
+        "value": "Modular Board",
+        "label": "Modular Board"
+    },
+    {
+        "value": "Move Through Deck",
+        "label": "Move Through Deck"
+    },
+    {
+        "value": "Movement Points",
+        "label": "Movement Points"
+    },
+    {
+        "value": "Movement Template",
+        "label": "Movement Template"
+    },
+    {
+        "value": "Moving Multiple Units",
+        "label": "Moving Multiple Units"
+    },
+    {
+        "value": "Multi-Use Cards",
+        "label": "Multi-Use Cards"
+    },
+    {
+        "value": "Multiple Maps",
+        "label": "Multiple Maps"
+    },
+    {
+        "value": "Narrative Choice / Paragraph",
+        "label": "Narrative Choice / Paragraph"
+    },
+    {
+        "value": "Negotiation",
+        "label": "Negotiation"
+    },
+    {
+        "value": "Neighbor Scope",
+        "label": "Neighbor Scope"
+    },
+    {
+        "value": "Network and Route Building",
+        "label": "Network and Route Building"
+    },
+    {
+        "value": "Once-Per-Game Abilities",
+        "label": "Once-Per-Game Abilities"
+    },
+    {
+        "value": "Open Drafting",
+        "label": "Open Drafting"
+    },
+    {
+        "value": "Order Counters",
+        "label": "Order Counters"
+    },
+    {
+        "value": "Ordering",
+        "label": "Ordering"
+    },
+    {
+        "value": "Ownership",
+        "label": "Ownership"
+    },
+    {
+        "value": "Paper-and-Pencil",
+        "label": "Paper-and-Pencil"
+    },
+    {
+        "value": "Passed Action Token",
+        "label": "Passed Action Token"
+    },
+    {
+        "value": "Pattern Building",
+        "label": "Pattern Building"
+    },
+    {
+        "value": "Pattern Movement",
+        "label": "Pattern Movement"
+    },
+    {
+        "value": "Pattern Recognition",
+        "label": "Pattern Recognition"
+    },
+    {
+        "value": "Physical Removal",
+        "label": "Physical Removal"
+    },
+    {
+        "value": "Pick-up and Deliver",
+        "label": "Pick-up and Deliver"
+    },
+    {
+        "value": "Pieces as Map",
+        "label": "Pieces as Map"
+    },
+    {
+        "value": "Player Elimination",
+        "label": "Player Elimination"
+    },
+    {
+        "value": "Player Judge",
+        "label": "Player Judge"
+    },
+    {
+        "value": "Point to Point Movement",
+        "label": "Point to Point Movement"
+    },
+    {
+        "value": "Predictive Bid",
+        "label": "Predictive Bid"
+    },
+    {
+        "value": "Prisoner's Dilemma",
+        "label": "Prisoner's Dilemma"
+    },
+    {
+        "value": "Programmed Movement",
+        "label": "Programmed Movement"
+    },
+    {
+        "value": "Push Your Luck",
+        "label": "Push Your Luck"
+    },
+    {
+        "value": "Questions and Answers",
+        "label": "Questions and Answers"
+    },
+    {
+        "value": "Race",
+        "label": "Race"
+    },
+    {
+        "value": "Random Production",
+        "label": "Random Production"
+    },
+    {
+        "value": "Ratio / Combat Results Table",
+        "label": "Ratio / Combat Results Table"
+    },
+    {
+        "value": "Re-rolling and Locking",
+        "label": "Re-rolling and Locking"
+    },
+    {
+        "value": "Real-Time",
+        "label": "Real-Time"
+    },
+    {
+        "value": "Relative Movement",
+        "label": "Relative Movement"
+    },
+    {
+        "value": "Resource Queue",
+        "label": "Resource Queue"
+    },
+    {
+        "value": "Resource to Move",
+        "label": "Resource to Move"
+    },
+    {
+        "value": "Rock-Paper-Scissors",
+        "label": "Rock-Paper-Scissors"
+    },
+    {
+        "value": "Role Playing",
+        "label": "Role Playing"
+    },
+    {
+        "value": "Roles with Asymmetric Information",
+        "label": "Roles with Asymmetric Information"
+    },
+    {
+        "value": "Roll / Spin and Move",
+        "label": "Roll / Spin and Move"
+    },
+    {
+        "value": "Rondel",
+        "label": "Rondel"
+    },
+    {
+        "value": "Scenario / Mission / Campaign Game",
+        "label": "Scenario / Mission / Campaign Game"
+    },
+    {
+        "value": "Score-and-Reset Game",
+        "label": "Score-and-Reset Game"
+    },
+    {
+        "value": "Secret Unit Deployment",
+        "label": "Secret Unit Deployment"
+    },
+    {
+        "value": "Selection Order Bid",
+        "label": "Selection Order Bid"
+    },
+    {
+        "value": "Semi-Cooperative Game",
+        "label": "Semi-Cooperative Game"
+    },
+    {
+        "value": "Set Collection",
+        "label": "Set Collection"
+    },
+    {
+        "value": "Simulation",
+        "label": "Simulation"
+    },
+    {
+        "value": "Simultaneous Action Selection",
+        "label": "Simultaneous Action Selection"
+    },
+    {
+        "value": "Singing",
+        "label": "Singing"
+    },
+    {
+        "value": "Single Loser Game",
+        "label": "Single Loser Game"
+    },
+    {
+        "value": "Slide / Push",
+        "label": "Slide / Push"
+    },
+    {
+        "value": "Solo / Solitaire Game",
+        "label": "Solo / Solitaire Game"
+    },
+    {
+        "value": "Speed Matching",
+        "label": "Speed Matching"
+    },
+    {
+        "value": "Spelling",
+        "label": "Spelling"
+    },
+    {
+        "value": "Square Grid",
+        "label": "Square Grid"
+    },
+    {
+        "value": "Stacking and Balancing",
+        "label": "Stacking and Balancing"
+    },
+    {
+        "value": "Stat Check Resolution",
+        "label": "Stat Check Resolution"
+    },
+    {
+        "value": "Static Capture",
+        "label": "Static Capture"
+    },
+    {
+        "value": "Stock Holding",
+        "label": "Stock Holding"
+    },
+    {
+        "value": "Storytelling",
+        "label": "Storytelling"
+    },
+    {
+        "value": "Sudden Death Ending",
+        "label": "Sudden Death Ending"
+    },
+    {
+        "value": "Tags",
+        "label": "Tags"
+    },
+    {
+        "value": "Take That",
+        "label": "Take That"
+    },
+    {
+        "value": "Targeted Clues",
+        "label": "Targeted Clues"
+    },
+    {
+        "value": "Team-Based Game",
+        "label": "Team-Based Game"
+    },
+    {
+        "value": "Tech Trees / Tech Tracks",
+        "label": "Tech Trees / Tech Tracks"
+    },
+    {
+        "value": "Three Dimensional Movement",
+        "label": "Three Dimensional Movement"
+    },
+    {
+        "value": "Tile Placement",
+        "label": "Tile Placement"
+    },
+    {
+        "value": "Track Movement",
+        "label": "Track Movement"
+    },
+    {
+        "value": "Trading",
+        "label": "Trading"
+    },
+    {
+        "value": "Traitor Game",
+        "label": "Traitor Game"
+    },
+    {
+        "value": "Trick-taking",
+        "label": "Trick-taking"
+    },
+    {
+        "value": "Tug of War",
+        "label": "Tug of War"
+    },
+    {
+        "value": "Turn Order: Auction",
+        "label": "Turn Order: Auction"
+    },
+    {
+        "value": "Turn Order: Claim Action",
+        "label": "Turn Order: Claim Action"
+    },
+    {
+        "value": "Turn Order: Pass Order",
+        "label": "Turn Order: Pass Order"
+    },
+    {
+        "value": "Turn Order: Progressive",
+        "label": "Turn Order: Progressive"
+    },
+    {
+        "value": "Turn Order: Random",
+        "label": "Turn Order: Random"
+    },
+    {
+        "value": "Turn Order: Role Order",
+        "label": "Turn Order: Role Order"
+    },
+    {
+        "value": "Turn Order: Stat-Based",
+        "label": "Turn Order: Stat-Based"
+    },
+    {
+        "value": "Turn Order: Time Track",
+        "label": "Turn Order: Time Track"
+    },
+    {
+        "value": "Variable Phase Order",
+        "label": "Variable Phase Order"
+    },
+    {
+        "value": "Variable Player Powers",
+        "label": "Variable Player Powers"
+    },
+    {
+        "value": "Variable Set-up",
+        "label": "Variable Set-up"
+    },
+    {
+        "value": "Victory Points as a Resource",
+        "label": "Victory Points as a Resource"
+    },
+    {
+        "value": "Voting",
+        "label": "Voting"
+    },
+    {
+        "value": "Worker Placement",
+        "label": "Worker Placement"
+    },
+    {
+        "value": "Worker Placement with Dice Workers",
+        "label": "Worker Placement with Dice Workers"
+    },
+    {
+        "value": "Worker Placement, Different Worker Types",
+        "label": "Worker Placement, Different Worker Types"
+    },
+    {
+        "value": "Zone of Control",
+        "label": "Zone of Control"
+    }
+]
