@@ -11,7 +11,7 @@ function Header({ theme, switchTheme }: headerProps) {
         <div className="headerbar">
             <a href="https://boardgamegeek.com" className="headertitle">
                 <div className="bggBackground">
-                    <img src="/powered-by-bgg-rgb.svg" className="fit"/>
+                    <img src="/powered-by-bgg-rgb.svg" className="fit" />
                 </div>
             </a>
             <button className="themeswitcher" onClick={switchTheme}>

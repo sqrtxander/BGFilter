@@ -13,4 +13,3 @@ export default defineConfig([
     pluginReact.configs.flat.recommended,
     { files: ["**/*.css"], plugins: { css }, language: "css/css" },
 ]);
-

@@ -1,22 +1,8 @@
 import { useScreenSize } from "@/hooks";
+import { type game } from "@/types/BGFilter";
 import "./BGFilter.css";
 import { FaChessPawn, FaClock } from "react-icons/fa";
 import { useState } from "react";
-
-type game = {
-    bgg_id: number;
-    name: string;
-    min_players: number;
-    max_players: number;
-    min_age: number;
-    min_playtime: number;
-    max_playtime: number;
-    year_published: number;
-    avg_rating: number;
-    geek_rating: number;
-    mechanics: string[];
-    categories: string[];
-};
 
 function Game({ data }: { data: game }) {
     const [expanded, setExpanded] = useState(false);
@@ -30,11 +16,13 @@ function Game({ data }: { data: game }) {
         <div className="mystack players_time">
             <p className="stat">
                 <FaChessPawn /> {data.min_players}
-                {data.min_players !== data.max_players && ` \u2013 ${data.max_players}`}
+                {data.min_players !== data.max_players &&
+                    ` \u2013 ${data.max_players}`}
             </p>
             <p className="stat">
                 <FaClock /> {data.min_playtime}
-                {data.min_playtime !== data.max_playtime && ` \u2013 ${data.max_playtime} `}
+                {data.min_playtime !== data.max_playtime &&
+                    ` \u2013 ${data.max_playtime} `}
                 min
             </p>
         </div>
@@ -100,4 +88,4 @@ function Game({ data }: { data: game }) {
     );
 }
 
-export { Game, type game };
+export default Game;

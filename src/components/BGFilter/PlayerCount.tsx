@@ -1,16 +1,14 @@
 import type { Dispatch, SetStateAction } from "react";
-import "./BGFilter.css"
+import type { playerCount } from "@/types/BGFilter";
+import "./BGFilter.css";
 
-type playerCount = {
-    min: number; max: number;
-}
-
-function PlayerCount(
-    { playerCount, setPlayerCount }: {
-        playerCount: playerCount,
-        setPlayerCount: Dispatch<SetStateAction<playerCount>>
-    }
-) {
+function PlayerCount({
+    playerCount,
+    setPlayerCount,
+}: {
+    playerCount: playerCount;
+    setPlayerCount: Dispatch<SetStateAction<playerCount>>;
+}) {
     const playerCountClick = (idx: number) => {
         if (idx === 0) {
             setPlayerCount({
@@ -30,94 +28,76 @@ function PlayerCount(
         });
     };
 
-    return <div className="playerCount">
-        <button
-            className={`ghostbutton any ${playerCount.min === -1 ? "on" : ""}`}
-            onClick={() => playerCountClick(0)}
-        >
-            Any
-        </button>
-        <button
-            className={
-                `ghostbutton ${playerCount.min <= 1 && 1 <= playerCount.max ? "on" : ""}`
-            }
-            onClick={() => playerCountClick(1)}
-        >
-            1
-        </button>
-        <button
-            className={
-                `ghostbutton ${playerCount.min <= 2 && 2 <= playerCount.max ? "on" : ""}`
-            }
-            onClick={() => playerCountClick(2)}
-        >
-            2
-        </button>
-        <button
-            className={
-                `ghostbutton ${playerCount.min <= 3 && 3 <= playerCount.max ? "on" : ""}`
-            }
-            onClick={() => playerCountClick(3)}
-        >
-            3
-        </button>
-        <button
-            className={
-                `ghostbutton ${playerCount.min <= 4 && 4 <= playerCount.max ? "on" : ""}`
-            }
-            onClick={() => playerCountClick(4)}
-        >
-            4
-        </button>
-        <button
-            className={
-                `ghostbutton ${playerCount.min <= 5 && 5 <= playerCount.max ? "on" : ""}`
-            }
-            onClick={() => playerCountClick(5)}
-        >
-            5
-        </button>
-        <button
-            className={
-                `ghostbutton ${playerCount.min <= 6 && 6 <= playerCount.max ? "on" : ""}`
-            }
-            onClick={() => playerCountClick(6)}
-        >
-            6
-        </button>
-        <button
-            className={
-                `ghostbutton ${playerCount.min <= 7 && 7 <= playerCount.max ? "on" : ""}`
-            }
-            onClick={() => playerCountClick(7)}
-        >
-            7
-        </button>
-        <button
-            className={
-                `ghostbutton ${playerCount.min <= 8 && 8 <= playerCount.max ? "on" : ""}`
-            }
-            onClick={() => playerCountClick(8)}
-        >
-            8
-        </button>
-        <button
-            className={
-                `ghostbutton ${playerCount.min <= 9 && 9 <= playerCount.max ? "on" : ""}`
-            }
-            onClick={() => playerCountClick(9)}
-        >
-            9
-        </button>
-        <button
-            className={
-                `ghostbutton ${playerCount.min <= 10 && 10 <= playerCount.max ? "on" : ""}`
-            }
-            onClick={() => playerCountClick(10)}
-        >
-            10+
-        </button>
-    </div>
+    return (
+        <div className="playerCount">
+            <button
+                className={`ghostbutton any ${playerCount.min === -1 ? "on" : ""}`}
+                onClick={() => playerCountClick(0)}
+            >
+                Any
+            </button>
+            <button
+                className={`ghostbutton ${playerCount.min <= 1 && 1 <= playerCount.max ? "on" : ""}`}
+                onClick={() => playerCountClick(1)}
+            >
+                1
+            </button>
+            <button
+                className={`ghostbutton ${playerCount.min <= 2 && 2 <= playerCount.max ? "on" : ""}`}
+                onClick={() => playerCountClick(2)}
+            >
+                2
+            </button>
+            <button
+                className={`ghostbutton ${playerCount.min <= 3 && 3 <= playerCount.max ? "on" : ""}`}
+                onClick={() => playerCountClick(3)}
+            >
+                3
+            </button>
+            <button
+                className={`ghostbutton ${playerCount.min <= 4 && 4 <= playerCount.max ? "on" : ""}`}
+                onClick={() => playerCountClick(4)}
+            >
+                4
+            </button>
+            <button
+                className={`ghostbutton ${playerCount.min <= 5 && 5 <= playerCount.max ? "on" : ""}`}
+                onClick={() => playerCountClick(5)}
+            >
+                5
+            </button>
+            <button
+                className={`ghostbutton ${playerCount.min <= 6 && 6 <= playerCount.max ? "on" : ""}`}
+                onClick={() => playerCountClick(6)}
+            >
+                6
+            </button>
+            <button
+                className={`ghostbutton ${playerCount.min <= 7 && 7 <= playerCount.max ? "on" : ""}`}
+                onClick={() => playerCountClick(7)}
+            >
+                7
+            </button>
+            <button
+                className={`ghostbutton ${playerCount.min <= 8 && 8 <= playerCount.max ? "on" : ""}`}
+                onClick={() => playerCountClick(8)}
+            >
+                8
+            </button>
+            <button
+                className={`ghostbutton ${playerCount.min <= 9 && 9 <= playerCount.max ? "on" : ""}`}
+                onClick={() => playerCountClick(9)}
+            >
+                9
+            </button>
+            <button
+                className={`ghostbutton ${playerCount.min <= 10 && 10 <= playerCount.max ? "on" : ""}`}
+                onClick={() => playerCountClick(10)}
+            >
+                10+
+            </button>
+        </div>
+    );
 }
 
-export { PlayerCount, type playerCount}
+export default PlayerCount;

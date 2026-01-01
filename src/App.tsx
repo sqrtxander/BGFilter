@@ -19,7 +19,6 @@ function App() {
         document.documentElement.setAttribute("data-theme", theme);
     }, [theme]);
 
-
     const screenSize = useScreenSize();
     const switchTheme = () => setTheme(theme === "light" ? "dark" : "light");
 
@@ -28,7 +27,7 @@ function App() {
             <Header theme={theme} switchTheme={switchTheme} />
             <Filter />
         </div>
-    )
+    );
 }
 
-export default App
+export default App;
