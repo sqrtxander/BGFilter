@@ -1,3 +1,5 @@
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
 function PageTurner({
     increment,
     decrement,
@@ -12,14 +14,15 @@ function PageTurner({
     return (
         <div className="hstack pageTurner">
             <button onClick={decrement} className="ghostbutton dec rmar">
-                &lt;
+                <FaChevronLeft />
             </button>
             <p className="infotxt">
                 Page {page + 1} of {Math.ceil(qty / 20)}. Showing entries{" "}
-                {page * 20} &ndash; {Math.min(page * 20 + 19, qty)} of {qty}
+                {page * 20 + 1} &ndash; {Math.min((page + 1) * 20, qty)} of{" "}
+                {qty}
             </p>
             <button onClick={increment} className="ghostbutton inc lmar">
-                &gt;
+                <FaChevronRight />
             </button>
         </div>
     );

@@ -22,14 +22,8 @@ function Filter() {
     const [page, setPage] = useState(0);
     const [mechanics, setMechanics] = useState<selectOption[]>([]);
     const [categories, setCategories] = useState<selectOption[]>([]);
-    const [playTime, setPlayTime] = useState({
-        min: -1,
-        max: -1,
-    });
-    const [playerCount, setPlayerCount] = useState({
-        min: -1,
-        max: -1,
-    });
+    const [playTime, setPlayTime] = useState({ min: -1, max: -1 });
+    const [playerCount, setPlayerCount] = useState({ min: -1, max: -1 });
 
     const perPage = 20;
 
@@ -108,7 +102,7 @@ function Filter() {
                             playTime={playTime}
                             setPlayTime={setPlayTime}
                         />
-                        <div className="mystack bmar">
+                        <div className="mystack mybmar">
                             <div className="vstack myrbmar">
                                 <p className="header">Mechanics</p>
                                 <MultiDropDown

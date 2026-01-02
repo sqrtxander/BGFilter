@@ -1,14 +1,26 @@
 import { useScreenSize } from "@/hooks";
 import { type game } from "@/types/BGFilter";
 import "./BGFilter.css";
-import { FaChessPawn, FaClock } from "react-icons/fa";
+import {
+    FaChevronDown,
+    FaChevronUp,
+    FaChessPawn,
+    FaClock,
+} from "react-icons/fa";
 import { useState } from "react";
 
 function Game({ data }: { data: game }) {
     const [expanded, setExpanded] = useState(false);
     const size = useScreenSize();
 
-    const thumb = <img src="https://placehold.co/600x400" className="thumb" />;
+    const thumb = (
+        <a
+            className="bggLink"
+            href={`https://boardgamegeek.com/boardgame/${data.bgg_id}`}
+        >
+            <img src="https://placehold.co/600x400" className="thumb" />
+        </a>
+    );
 
     const title = <p className="title">{data.name}</p>;
 
@@ -26,6 +38,19 @@ function Game({ data }: { data: game }) {
                 min
             </p>
         </div>
+    );
+
+    const expandButton = (
+        <button
+            className="ghostbutton noborder seemore"
+            onClick={() => setExpanded(!expanded)}
+        >
+            {expanded ? (
+                <FaChevronUp className="bigicon" />
+            ) : (
+                <FaChevronDown className="bigicon" />
+            )}
+        </button>
     );
 
     const content = (
@@ -55,28 +80,25 @@ function Game({ data }: { data: game }) {
 
     if (["xs", "s"].includes(size)) {
         return (
-            <div
-                className={`gamebox vstack ${expanded ? "open" : "closed"}`}
-                onClick={() => setExpanded(!expanded)}
-            >
-                <div className="hstack">
-                    {thumb}
-                    <div className="vstack">
-                        {title}
-                        {players_time}
+            <div className={`gamebox vstack ${expanded ? "open" : "closed"}`}>
+                <div className="content">
+                    <div className="hstack">
+                        {thumb}
+                        <div className="vstack">
+                            {title}
+                            {players_time}
+                        </div>
                     </div>
+                    {expanded && content}
                 </div>
-                {expanded && content}
+                {expandButton}
             </div>
         );
     }
 
     return (
-        <div
-            className={`gamebox ${expanded ? "open" : "closed"}`}
-            onClick={() => setExpanded(!expanded)}
-        >
-            <div className="hstack">
+        <div className={`gamebox ${expanded ? "open" : "closed"}`}>
+            <div className="content hstack">
                 {thumb}
                 <div className="vstack">
                     {title}
@@ -84,6 +106,7 @@ function Game({ data }: { data: game }) {
                     {expanded && content}
                 </div>
             </div>
+            {expandButton}
         </div>
     );
 }

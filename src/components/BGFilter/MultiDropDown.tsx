@@ -42,6 +42,7 @@ function MultiDropDown({
             borderRadius: "4px",
             ":hover": {
                 border: "2px solid var(--fg)",
+                cursor: "pointer",
             },
         }),
         option: (styles, { isFocused }) => ({

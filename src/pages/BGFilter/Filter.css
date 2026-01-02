@@ -75,6 +75,13 @@
     width: 100%
 }
 
+.size-2xl .mybmar,
+.size-xl .mybmar,
+.size-l .mybmar,
+.size-m .mybmar {
+    margin-bottom: 1em;
+}
+
 .mybutton {
     border-radius: 4px;
     padding: 0.5em 1em;

@@ -1,11 +1,25 @@
 .gamebox {
     background-color: var(--bg-highlight);
+    color: var(--fg);
+    border: none;
     width: 100%;
     height: fit-content;
     padding: 1em;
     margin: 1em;
     border-radius: 10px;
-    cursor: pointer;
+    text-align: left;
+    display: block;
+    position: relative;
+}
+
+.gamebox .content {
+}
+
+.gamebox .seemore {
+    position: absolute;
+    margin: 0.5em;
+    bottom: 0;
+    right: 0;
 }
 
 .gamebox .hstack {
@@ -31,15 +45,20 @@
 }
 
 .gamebox .thumb {
-    min-height: 125px;
+    max-height: 125px;
     height: 125px;
-    min-width: 125px;
+    max-width: 125px;
     width: 125px;
-    margin-right: 1em;
 }
 
-.size-xs .gamebox.open .thumb,
-.size-s .gamebox.open .thumb {
+.gamebox .bggLink {
+    margin-right: 1em;
+    height: fit-content;
+    width: fit-content;
+}
+
+.size-xs .gamebox.open .bggLink,
+.size-s .gamebox.open .bggLink {
     margin-bottom: 1em;
 }
 
@@ -100,6 +119,15 @@
     padding: 0 1em;
 }
 
+.bigicon {
+    width: 40px;
+    height: auto;
+}
+
+.noborder {
+    border: none;
+}
+
 
 .size-2xl .playerCount,
 .size-xl .playerCount,
@@ -139,13 +167,21 @@
     border-radius: 4px;
 }
 
-.playTime > p > input {
+.playTime input {
     background-color: var(--bg);
     color: var(--fg);
     border: 2px solid var(--fg);
     border-radius: 4px;
     width: 4em;
     padding: 0.5em 1em;
+    text-align: center;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.playTime input::-webkit-inner-spin-button,
+.playTime input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
 }
 
 .pageTurner {
@@ -170,3 +206,8 @@
     top: 0;
     right: 0;
 }
+
+.pageTurner .infotxt {
+    text-align: center;
+}
+
