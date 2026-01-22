@@ -15,6 +15,7 @@ function PlayTime({
                 <input
                     type="number"
                     inputMode="numeric"
+                    pattern="[0-9]"
                     min={0}
                     value={playTime.min === -1 ? "" : playTime.min}
                     onChange={(n) =>

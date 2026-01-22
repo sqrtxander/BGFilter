@@ -1,6 +1,7 @@
 type game = {
     bgg_id: number;
     name: string;
+    thumbnail: string;
     min_players: number;
     max_players: number;
     min_age: number;

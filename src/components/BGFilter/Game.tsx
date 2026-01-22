@@ -18,7 +18,7 @@ function Game({ data }: { data: game }) {
             className="bggLink"
             href={`https://boardgamegeek.com/boardgame/${data.bgg_id}`}
         >
-            <img src="https://placehold.co/600x400" className="thumb" />
+            <img src={data.thumbnail} className="thumb" />
         </a>
     );
 

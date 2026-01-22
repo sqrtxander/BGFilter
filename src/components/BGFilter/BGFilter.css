@@ -45,16 +45,17 @@
 }
 
 .gamebox .thumb {
-    max-height: 125px;
-    height: 125px;
-    max-width: 125px;
-    width: 125px;
+    max-height: 100%;
+    max-width: 100%;
 }
 
 .gamebox .bggLink {
     margin-right: 1em;
-    height: fit-content;
-    width: fit-content;
+    height: 125px;
+    width: 125px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .size-xs .gamebox.open .bggLink,
