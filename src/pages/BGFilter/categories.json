@@ -1,338 +1,80 @@
 [
-    {
-        "value": "Abstract Strategy",
-        "label": "Abstract Strategy"
-    },
-    {
-        "value": "Action / Dexterity",
-        "label": "Action / Dexterity"
-    },
-    {
-        "value": "Adventure",
-        "label": "Adventure"
-    },
-    {
-        "value": "Age of Reason",
-        "label": "Age of Reason"
-    },
-    {
-        "value": "American Civil War",
-        "label": "American Civil War"
-    },
-    {
-        "value": "American Indian Wars",
-        "label": "American Indian Wars"
-    },
-    {
-        "value": "American Revolutionary War",
-        "label": "American Revolutionary War"
-    },
-    {
-        "value": "American West",
-        "label": "American West"
-    },
-    {
-        "value": "Ancient",
-        "label": "Ancient"
-    },
-    {
-        "value": "Animals",
-        "label": "Animals"
-    },
-    {
-        "value": "Arabian",
-        "label": "Arabian"
-    },
-    {
-        "value": "Aviation / Flight",
-        "label": "Aviation / Flight"
-    },
-    {
-        "value": "Bluffing",
-        "label": "Bluffing"
-    },
-    {
-        "value": "Book",
-        "label": "Book"
-    },
-    {
-        "value": "Card Game",
-        "label": "Card Game"
-    },
-    {
-        "value": "Children's Game",
-        "label": "Children's Game"
-    },
-    {
-        "value": "City Building",
-        "label": "City Building"
-    },
-    {
-        "value": "Civil War",
-        "label": "Civil War"
-    },
-    {
-        "value": "Civilization",
-        "label": "Civilization"
-    },
-    {
-        "value": "Collectible Components",
-        "label": "Collectible Components"
-    },
-    {
-        "value": "Comic Book / Strip",
-        "label": "Comic Book / Strip"
-    },
-    {
-        "value": "Deduction",
-        "label": "Deduction"
-    },
-    {
-        "value": "Dice",
-        "label": "Dice"
-    },
-    {
-        "value": "Economic",
-        "label": "Economic"
-    },
-    {
-        "value": "Educational",
-        "label": "Educational"
-    },
-    {
-        "value": "Electronic",
-        "label": "Electronic"
-    },
-    {
-        "value": "Environmental",
-        "label": "Environmental"
-    },
-    {
-        "value": "Expansion for Base-game",
-        "label": "Expansion for Base-game"
-    },
-    {
-        "value": "Exploration",
-        "label": "Exploration"
-    },
-    {
-        "value": "Fan Expansion",
-        "label": "Fan Expansion"
-    },
-    {
-        "value": "Fantasy",
-        "label": "Fantasy"
-    },
-    {
-        "value": "Farming",
-        "label": "Farming"
-    },
-    {
-        "value": "Fighting",
-        "label": "Fighting"
-    },
-    {
-        "value": "Game System",
-        "label": "Game System"
-    },
-    {
-        "value": "Horror",
-        "label": "Horror"
-    },
-    {
-        "value": "Humor",
-        "label": "Humor"
-    },
-    {
-        "value": "Industry / Manufacturing",
-        "label": "Industry / Manufacturing"
-    },
-    {
-        "value": "Korean War",
-        "label": "Korean War"
-    },
-    {
-        "value": "Mafia",
-        "label": "Mafia"
-    },
-    {
-        "value": "Math",
-        "label": "Math"
-    },
-    {
-        "value": "Mature / Adult",
-        "label": "Mature / Adult"
-    },
-    {
-        "value": "Maze",
-        "label": "Maze"
-    },
-    {
-        "value": "Medical",
-        "label": "Medical"
-    },
-    {
-        "value": "Medieval",
-        "label": "Medieval"
-    },
-    {
-        "value": "Memory",
-        "label": "Memory"
-    },
-    {
-        "value": "Miniatures",
-        "label": "Miniatures"
-    },
-    {
-        "value": "Modern Warfare",
-        "label": "Modern Warfare"
-    },
-    {
-        "value": "Movies / TV / Radio theme",
-        "label": "Movies / TV / Radio theme"
-    },
-    {
-        "value": "Murder / Mystery",
-        "label": "Murder / Mystery"
-    },
-    {
-        "value": "Music",
-        "label": "Music"
-    },
-    {
-        "value": "Mythology",
-        "label": "Mythology"
-    },
-    {
-        "value": "Napoleonic",
-        "label": "Napoleonic"
-    },
-    {
-        "value": "Nautical",
-        "label": "Nautical"
-    },
-    {
-        "value": "Negotiation",
-        "label": "Negotiation"
-    },
-    {
-        "value": "Novel-based",
-        "label": "Novel-based"
-    },
-    {
-        "value": "Number",
-        "label": "Number"
-    },
-    {
-        "value": "Party Game",
-        "label": "Party Game"
-    },
-    {
-        "value": "Pike and Shot",
-        "label": "Pike and Shot"
-    },
-    {
-        "value": "Pirates",
-        "label": "Pirates"
-    },
-    {
-        "value": "Political",
-        "label": "Political"
-    },
-    {
-        "value": "Post-Napoleonic",
-        "label": "Post-Napoleonic"
-    },
-    {
-        "value": "Prehistoric",
-        "label": "Prehistoric"
-    },
-    {
-        "value": "Print & Play",
-        "label": "Print & Play"
-    },
-    {
-        "value": "Puzzle",
-        "label": "Puzzle"
-    },
-    {
-        "value": "Racing",
-        "label": "Racing"
-    },
-    {
-        "value": "Real-time",
-        "label": "Real-time"
-    },
-    {
-        "value": "Religious",
-        "label": "Religious"
-    },
-    {
-        "value": "Renaissance",
-        "label": "Renaissance"
-    },
-    {
-        "value": "Science Fiction",
-        "label": "Science Fiction"
-    },
-    {
-        "value": "Space Exploration",
-        "label": "Space Exploration"
-    },
-    {
-        "value": "Spies / Secret Agents",
-        "label": "Spies / Secret Agents"
-    },
-    {
-        "value": "Sports",
-        "label": "Sports"
-    },
-    {
-        "value": "Territory Building",
-        "label": "Territory Building"
-    },
-    {
-        "value": "Trains",
-        "label": "Trains"
-    },
-    {
-        "value": "Transportation",
-        "label": "Transportation"
-    },
-    {
-        "value": "Travel",
-        "label": "Travel"
-    },
-    {
-        "value": "Trivia",
-        "label": "Trivia"
-    },
-    {
-        "value": "Video Game Theme",
-        "label": "Video Game Theme"
-    },
-    {
-        "value": "Vietnam War",
-        "label": "Vietnam War"
-    },
-    {
-        "value": "Wargame",
-        "label": "Wargame"
-    },
-    {
-        "value": "Word Game",
-        "label": "Word Game"
-    },
-    {
-        "value": "World War I",
-        "label": "World War I"
-    },
-    {
-        "value": "World War II",
-        "label": "World War II"
-    },
-    {
-        "value": "Zombies",
-        "label": "Zombies"
-    }
+    { "label": "Abstract Strategy", "value": "Abstract Strategy" },
+    { "label": "Action / Dexterity", "value": "Action / Dexterity" },
+    { "label": "Adventure", "value": "Adventure" },
+    { "label": "Age of Reason", "value": "Age of Reason" },
+    { "label": "American West", "value": "American West" },
+    { "label": "Ancient", "value": "Ancient" },
+    { "label": "Animals", "value": "Animals" },
+    { "label": "Arabian", "value": "Arabian" },
+    { "label": "Aviation / Flight", "value": "Aviation / Flight" },
+    { "label": "Bluffing", "value": "Bluffing" },
+    { "label": "Card Game", "value": "Card Game" },
+    { "label": "Children's Game", "value": "Children's Game" },
+    { "label": "City Building", "value": "City Building" },
+    { "label": "Civil War", "value": "Civil War" },
+    { "label": "Civilization", "value": "Civilization" },
+    { "label": "Collectible Components", "value": "Collectible Components" },
+    { "label": "Comic Book / Strip", "value": "Comic Book / Strip" },
+    { "label": "Deduction", "value": "Deduction" },
+    { "label": "Dice", "value": "Dice" },
+    { "label": "Economic", "value": "Economic" },
+    { "label": "Educational", "value": "Educational" },
+    { "label": "Electronic", "value": "Electronic" },
+    { "label": "Environmental", "value": "Environmental" },
+    { "label": "Expansion for Base-game", "value": "Expansion for Base-game" },
+    { "label": "Exploration", "value": "Exploration" },
+    { "label": "Fantasy", "value": "Fantasy" },
+    { "label": "Farming", "value": "Farming" },
+    { "label": "Fighting", "value": "Fighting" },
+    { "label": "Horror", "value": "Horror" },
+    { "label": "Humor", "value": "Humor" },
+    {
+        "label": "Industry / Manufacturing",
+        "value": "Industry / Manufacturing"
+    },
+    { "label": "Math", "value": "Math" },
+    { "label": "Maze", "value": "Maze" },
+    { "label": "Medical", "value": "Medical" },
+    { "label": "Medieval", "value": "Medieval" },
+    { "label": "Memory", "value": "Memory" },
+    { "label": "Miniatures", "value": "Miniatures" },
+    {
+        "label": "Movies / TV / Radio theme",
+        "value": "Movies / TV / Radio theme"
+    },
+    { "label": "Murder / Mystery", "value": "Murder / Mystery" },
+    { "label": "Music", "value": "Music" },
+    { "label": "Mythology", "value": "Mythology" },
+    { "label": "Napoleonic", "value": "Napoleonic" },
+    { "label": "Nautical", "value": "Nautical" },
+    { "label": "Negotiation", "value": "Negotiation" },
+    { "label": "Novel-based", "value": "Novel-based" },
+    { "label": "Number", "value": "Number" },
+    { "label": "Party Game", "value": "Party Game" },
+    { "label": "Pike and Shot", "value": "Pike and Shot" },
+    { "label": "Pirates", "value": "Pirates" },
+    { "label": "Political", "value": "Political" },
+    { "label": "Post-Napoleonic", "value": "Post-Napoleonic" },
+    { "label": "Prehistoric", "value": "Prehistoric" },
+    { "label": "Print & Play", "value": "Print & Play" },
+    { "label": "Puzzle", "value": "Puzzle" },
+    { "label": "Racing", "value": "Racing" },
+    { "label": "Real-time", "value": "Real-time" },
+    { "label": "Religious", "value": "Religious" },
+    { "label": "Renaissance", "value": "Renaissance" },
+    { "label": "Science Fiction", "value": "Science Fiction" },
+    { "label": "Space Exploration", "value": "Space Exploration" },
+    { "label": "Spies / Secret Agents", "value": "Spies / Secret Agents" },
+    { "label": "Sports", "value": "Sports" },
+    { "label": "Territory Building", "value": "Territory Building" },
+    { "label": "Trains", "value": "Trains" },
+    { "label": "Transportation", "value": "Transportation" },
+    { "label": "Travel", "value": "Travel" },
+    { "label": "Trivia", "value": "Trivia" },
+    { "label": "Video Game Theme", "value": "Video Game Theme" },
+    { "label": "Wargame", "value": "Wargame" },
+    { "label": "Word Game", "value": "Word Game" },
+    { "label": "World War II", "value": "World War II" },
+    { "label": "Zombies", "value": "Zombies" }
 ]
