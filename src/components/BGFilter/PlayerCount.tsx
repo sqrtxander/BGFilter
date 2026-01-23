@@ -1,4 +1,3 @@
-import type { Dispatch, SetStateAction } from "react";
 import type { playerCount } from "@/types/BGFilter";
 import "./BGFilter.css";
 
@@ -7,7 +6,9 @@ function PlayerCount({
     setPlayerCount,
 }: {
     playerCount: playerCount;
-    setPlayerCount: Dispatch<SetStateAction<playerCount>>;
+    setPlayerCount: (
+        value: playerCount | ((val: playerCount) => playerCount),
+    ) => void;
 }) {
     const playerCountClick = (idx: number) => {
         if (idx === 0) {

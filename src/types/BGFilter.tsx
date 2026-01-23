@@ -29,4 +29,17 @@ type playerCount = {
     max: number;
 };
 
-export { type game, type selectOption, type playTime, type playerCount };
+type filterState = {
+    playerCount: playerCount;
+    playTime: playTime;
+    mechanics: selectOption[];
+    categories: selectOption[];
+};
+
+export {
+    type game,
+    type selectOption,
+    type playTime,
+    type playerCount,
+    type filterState,
+};

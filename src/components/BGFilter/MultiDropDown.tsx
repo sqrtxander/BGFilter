@@ -1,4 +1,3 @@
-import type { Dispatch, SetStateAction } from "react";
 import Select, { type StylesConfig } from "react-select";
 import { type selectOption } from "@/types/BGFilter";
 
@@ -9,7 +8,9 @@ function MultiDropDown({
 }: {
     options: selectOption[];
     value: selectOption[];
-    setValue: Dispatch<SetStateAction<selectOption[]>>;
+    setValue: (
+        value: selectOption[] | ((val: selectOption[]) => selectOption[]),
+    ) => void;
 }) {
     const selectStyles: StylesConfig = {
         input: (styles) => ({

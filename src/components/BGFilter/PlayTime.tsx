@@ -1,4 +1,3 @@
-import type { Dispatch, SetStateAction } from "react";
 import type { playTime } from "@/types/BGFilter";
 import "./BGFilter.css";
 
@@ -7,7 +6,7 @@ function PlayTime({
     setPlayTime,
 }: {
     playTime: playTime;
-    setPlayTime: Dispatch<SetStateAction<playTime>>;
+    setPlayTime: (value: playTime | ((val: playTime) => playTime)) => void;
 }) {
     return (
         <div className="playTime">
