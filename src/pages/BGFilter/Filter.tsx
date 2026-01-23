@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import gameData from "./gameData.json";
 import categoriesList from "./categories.json";
 import mechanicsList from "./mechanics.json";
@@ -10,7 +10,6 @@ import MultiDropDown from "@/components/BGFilter/MultiDropDown";
 import Game from "@/components/BGFilter/Game";
 import PageTurner from "@/components/BGFilter/PageTurner";
 import {
-    type game,
     type playerCount,
     type playTime,
     type selectOption,
@@ -27,24 +26,32 @@ function Filter() {
             categories: [],
         },
     );
+    const items = gameData;
 
-    const getFiltered = (fs: filterState) => {
+    const filtered = useMemo(() => {
+        if (!filterState) {
+            return gameData;
+        }
+
         return items.filter((it) => {
             // player count
-            if (fs.playerCount.min !== -1) {
+            if (filterState.playerCount.min !== -1) {
                 if (
-                    it.min_players > fs.playerCount.min ||
-                    it.max_players < fs.playerCount.max
+                    it.min_players > filterState.playerCount.min ||
+                    it.max_players < filterState.playerCount.max
                 ) {
                     return false;
                 }
             }
 
             // play time
-            if (fs.playTime.min !== -1 && fs.playTime.max !== -1) {
+            if (
+                filterState.playTime.min !== -1 &&
+                filterState.playTime.max !== -1
+            ) {
                 if (
-                    it.min_playtime < fs.playTime.min ||
-                    it.max_playtime > fs.playTime.max
+                    it.min_playtime < filterState.playTime.min ||
+                    it.max_playtime > filterState.playTime.max
                 ) {
                     return false;
                 }
@@ -52,7 +59,7 @@ function Filter() {
 
             // mechanics
             if (
-                fs.mechanics
+                filterState.mechanics
                     .map((x) => x.value)
                     .some((mech) => !it.mechanics.includes(mech))
             ) {
@@ -61,7 +68,7 @@ function Filter() {
 
             // categories
             if (
-                fs.categories
+                filterState.categories
                     .map((x) => x.value)
                     .some((cat) => !it.categories.includes(cat))
             ) {
@@ -70,10 +77,9 @@ function Filter() {
 
             return true;
         });
-    };
-    const items = gameData;
+    }, [filterState, items]);
+
     const loaded = true;
-    const [filtered, setFiltered] = useState<game[]>(getFiltered(filterState));
     const [page, setPage] = useState(0);
 
     const perPage = 20;
@@ -110,11 +116,6 @@ function Filter() {
         const valueToStore =
             value instanceof Function ? value(filterState.mechanics) : value;
         setFilterState((fs) => ({ ...fs!, mechanics: valueToStore }));
-    };
-
-    const filter = () => {
-        setFiltered(getFiltered(filterState));
-        setPage(0);
     };
 
     const reset = () => {
@@ -162,12 +163,6 @@ function Filter() {
                             </div>
                         </div>
                         <div className="hstack bmar">
-                            <button
-                                className="ghostbutton mybutton rmar"
-                                onClick={filter}
-                            >
-                                Filter
-                            </button>
                             <button
                                 className="ghostbutton mybutton rmar"
                                 onClick={reset}
