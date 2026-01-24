@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import gameData from "./gameData.json";
 import categoriesList from "./categories.json";
 import mechanicsList from "./mechanics.json";
@@ -7,8 +7,6 @@ import useLocalStorage from "use-local-storage";
 import PlayerCount from "@/components/BGFilter/PlayerCount";
 import PlayTime from "@/components/BGFilter/PlayTime";
 import MultiDropDown from "@/components/BGFilter/MultiDropDown";
-import Game from "@/components/BGFilter/Game";
-import PageTurner from "@/components/BGFilter/PageTurner";
 import Searchbar from "@/components/BGFilter/Searchbar";
 import {
     type playerCount,
@@ -16,6 +14,7 @@ import {
     type selectOption,
     type filterState,
 } from "@/types/BGFilter";
+import PaginatedItems from "./PaginatedItems";
 
 function Filter() {
     const [filterState, setFilterState] = useLocalStorage<filterState>(
@@ -32,7 +31,7 @@ function Filter() {
 
     const filtered = useMemo(() => {
         if (!filterState) {
-            return gameData;
+            return items;
         }
 
         return items.filter((it) => {
@@ -99,14 +98,12 @@ function Filter() {
         });
     }, [filterState, items]);
 
+    // useEffect(() => {
+    //     setPage(0);
+    // }, [filterState, items]);
+    //
+
     const loaded = true;
-    const [page, setPage] = useState(0);
-
-    const perPage = 20;
-
-    const incPage = () =>
-        setPage((p) => ((p + 1) * 20 >= filtered.length ? p : p + 1));
-    const decPage = () => setPage((p) => (p <= 0 ? p : p - 1));
 
     const setPlayerCount = (
         value: playerCount | ((val: playerCount) => playerCount),
@@ -152,7 +149,6 @@ function Filter() {
             categories: [],
             query: "",
         });
-        setPage(0);
     };
 
     return (
@@ -206,27 +202,10 @@ function Filter() {
                             </button>
                         </div>
                     </div>
-                    <PageTurner
-                        increment={incPage}
-                        decrement={decPage}
-                        page={page}
-                        qty={filtered.length}
+                    <PaginatedItems
+                        key={JSON.stringify(filterState)}
+                        items={filtered}
                     />
-                    <div className="vstack hcenter wide">
-                        {filtered
-                            .slice(page * perPage, (page + 1) * perPage)
-                            .map((it, i) => (
-                                <Game key={i} data={it} />
-                            ))}
-                    </div>
-                    {filtered.length > 0 && (
-                        <PageTurner
-                            increment={incPage}
-                            decrement={decPage}
-                            page={page}
-                            qty={filtered.length}
-                        />
-                    )}
                 </div>
             )}
         </>
