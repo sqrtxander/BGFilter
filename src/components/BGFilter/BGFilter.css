@@ -212,3 +212,12 @@
     text-align: center;
 }
 
+.searchbar {
+    width: calc(100% - 2em);
+    background-color: var(--bg);
+    color: var(--fg);
+    border: 2px solid var(--fg);
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    text-align: left;
+}

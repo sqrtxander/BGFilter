@@ -9,6 +9,7 @@ import PlayTime from "@/components/BGFilter/PlayTime";
 import MultiDropDown from "@/components/BGFilter/MultiDropDown";
 import Game from "@/components/BGFilter/Game";
 import PageTurner from "@/components/BGFilter/PageTurner";
+import Searchbar from "@/components/BGFilter/Searchbar";
 import {
     type playerCount,
     type playTime,
@@ -24,6 +25,7 @@ function Filter() {
             playTime: { min: -1, max: -1 },
             mechanics: [],
             categories: [],
+            query: "",
         },
     );
     const items = gameData;
@@ -35,7 +37,12 @@ function Filter() {
 
         return items.filter((it) => {
             // player count
-            if (filterState.playerCount.min !== -1) {
+            if (
+                filterState.playerCount !== undefined &&
+                filterState.playerCount.min !== undefined &&
+                filterState.playerCount.max !== undefined &&
+                filterState.playerCount.min !== -1
+            ) {
                 if (
                     it.min_players > filterState.playerCount.min ||
                     it.max_players < filterState.playerCount.max
@@ -46,6 +53,9 @@ function Filter() {
 
             // play time
             if (
+                filterState.playTime !== undefined &&
+                filterState.playTime.min !== undefined &&
+                filterState.playTime.max !== undefined &&
                 filterState.playTime.min !== -1 &&
                 filterState.playTime.max !== -1
             ) {
@@ -59,6 +69,7 @@ function Filter() {
 
             // mechanics
             if (
+                filterState.mechanics !== undefined &&
                 filterState.mechanics
                     .map((x) => x.value)
                     .some((mech) => !it.mechanics.includes(mech))
@@ -68,9 +79,18 @@ function Filter() {
 
             // categories
             if (
+                filterState.categories !== undefined &&
                 filterState.categories
                     .map((x) => x.value)
                     .some((cat) => !it.categories.includes(cat))
+            ) {
+                return false;
+            }
+
+            // search query
+            if (
+                filterState.query !== undefined &&
+                !it.name.toLowerCase().includes(filterState.query.toLowerCase())
             ) {
                 return false;
             }
@@ -118,13 +138,21 @@ function Filter() {
         setFilterState((fs) => ({ ...fs!, mechanics: valueToStore }));
     };
 
+    const setQuery = (value: string | ((val: string) => string)) => {
+        const valueToStore =
+            value instanceof Function ? value(filterState.query) : value;
+        setFilterState((fs) => ({ ...fs!, query: valueToStore }));
+    };
+
     const reset = () => {
         setFilterState({
             playerCount: { min: -1, max: -1 },
             playTime: { min: -1, max: -1 },
             mechanics: [],
             categories: [],
+            query: "",
         });
+        setPage(0);
     };
 
     return (
@@ -161,6 +189,13 @@ function Filter() {
                                     setValue={setCategories}
                                 />
                             </div>
+                        </div>
+                        <p className="header">Search</p>
+                        <div className="bmar wfull">
+                            <Searchbar
+                                query={filterState.query}
+                                setQuery={setQuery}
+                            />
                         </div>
                         <div className="hstack bmar">
                             <button

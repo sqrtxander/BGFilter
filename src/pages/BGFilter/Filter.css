@@ -86,3 +86,7 @@
     border-radius: 4px;
     padding: 0.5em 1em;
 }
+
+.wfull {
+    width: 100%;
+}

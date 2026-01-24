@@ -34,6 +34,7 @@ type filterState = {
     playTime: playTime;
     mechanics: selectOption[];
     categories: selectOption[];
+    query: string;
 };
 
 export {
